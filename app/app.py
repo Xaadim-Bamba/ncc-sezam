@@ -45,7 +45,7 @@ def show():
         )
 
     st.title("Explorateur de catégories sur LégiFrance")
-
+    st.sidebar.title("Recherche")
     st.session_state.page = (
         st.session_state.selected_topic
     ) = st.sidebar.selectbox("Module: ", ["Textes", "Network", "Graphique"])
@@ -77,24 +77,23 @@ def sidebar(keywords_topic, dataset):
 
     topic_list = keywords_topic.iloc[:, 0].tolist()
     keywords_list = keywords_topic.iloc[:, 1].tolist()
-
     st.session_state.selected_topic = st.sidebar.selectbox(
-        "Topic: ", topic_list
+        "Thématiques : ", topic_list
     )
     topic_index = topic_list.index(st.session_state.selected_topic)
 
     st.session_state.selected_word = st.sidebar.multiselect(
-        "Words to select from: ",
+        "Mots-clés : ",
         keywords_list[topic_index],
     )
 
     st.session_state.selected_emetteur = st.sidebar.selectbox(
-        "Emetteur: ",
+        "Emetteur : ",
         dataset["emetteur"].drop_duplicates().tolist(),
     )
 
     st.session_state.selected_nature = st.sidebar.selectbox(
-        "Nature: ",
+        "Nature : ",
         dataset["nature"].drop_duplicates().tolist(),
     )
 
