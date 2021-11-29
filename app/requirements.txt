@@ -1,0 +1,6 @@
+pandas
+spacy
+fr_core_news_sm
+utils
+plotly
+networkx
