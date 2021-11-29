@@ -9,4 +9,4 @@ La connaissance des topics est sauvegardée dans le dossier dataset. Ces connais
 
 - Update le 29 novembre 2021
 
-Le projet est en cours de reprise un déploiement de l'app Streamlit en ligne a été effectué. Cette application se trouve à l'adresse suivante : [app](!https://share.streamlit.io/sylvariane/ncc-sezam/main/app/app.py)
+Le projet est en cours de reprise un déploiement de l'app Streamlit en ligne a été effectué. Cette application se trouve à l'adresse suivante : [app](https://share.streamlit.io/sylvariane/ncc-sezam/main/app/app.py)
